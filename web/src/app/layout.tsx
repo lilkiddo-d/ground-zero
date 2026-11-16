@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import { Unbounded, Inter_Tight, JetBrains_Mono } from "next/font/google";
+// Fonts are bundled with the app (no download from Google at build time).
+import "@fontsource-variable/unbounded";
+import "@fontsource-variable/inter-tight";
+import "@fontsource-variable/jetbrains-mono";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 import { Header } from "@/components/Header";
@@ -8,10 +11,6 @@ import { Footer } from "@/components/Footer";
 import { AgreeGate } from "@/components/AgreeGate";
 import { brand } from "@/config/brand";
 import { isPrelaunch } from "@/lib/chain";
-
-const unbounded = Unbounded({ subsets: ["latin"], variable: "--font-unbounded", weight: ["400", "600", "700", "800"] });
-const inter = Inter_Tight({ subsets: ["latin"], variable: "--font-inter" });
-const jet = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains" });
 
 export const metadata: Metadata = {
   title: { default: `${brand.name} — ${brand.tagline}`, template: `%s · ${brand.name}` },
@@ -22,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${unbounded.variable} ${inter.variable} ${jet.variable}`}>
+    <html lang="en">
       <body>
         <Providers>
           {!isPrelaunch && <Sidebar />}

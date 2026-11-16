@@ -24,6 +24,9 @@
   --radius-sm: 8px;
   --max: 1320px;
   --gutter: clamp(16px, 4vw, 40px);
+  --font-unbounded: "Unbounded Variable";
+  --font-inter: "Inter Tight Variable";
+  --font-jetbrains: "JetBrains Mono Variable";
   --font-display: var(--font-unbounded), system-ui, sans-serif;
   --font-sans: var(--font-inter), system-ui, sans-serif;
   --font-mono: var(--font-jetbrains), ui-monospace, monospace;
@@ -138,7 +141,7 @@ img { display: block; max-width: 100%; }
   border-bottom: 1px solid var(--line);
 }
 .header-inner { height: 64px; display: flex; align-items: center; gap: 24px; }
-.logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; letter-spacing: 0.02em; }
+.logo { display: flex; align-items: center; gap: 10px; white-space: nowrap; font-family: var(--font-display); font-weight: 700; letter-spacing: 0.02em; }
 .nav { display: flex; gap: 4px; }
 .nav a { padding: 8px 12px; border-radius: 999px; color: var(--ink-2); font-size: 14px; font-weight: 500; }
 .nav a:hover { color: var(--ink); }
