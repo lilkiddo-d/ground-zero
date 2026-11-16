@@ -1,0 +1,13 @@
+# Netlify: the Next.js app lives in web/. Netlify's Next.js runtime is detected automatically.
+[build]
+  base = "web"
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # Pre-launch mode: "/" shows the landing page (countdown, meme studio, early list) and the app is hidden.
+  # The app needs a public chain to read from. When the contracts are on Base Sepolia (or Zero), set
+  # NEXT_PUBLIC_PRELAUNCH=false plus NEXT_PUBLIC_CHAIN, NEXT_PUBLIC_LAUNCHPAD_ADDRESS, NEXT_PUBLIC_START_BLOCK
+  # and NEXT_PUBLIC_LOG_CHUNK in Netlify > Site configuration > Environment variables, then redeploy.
+  NEXT_PUBLIC_PRELAUNCH = "true"

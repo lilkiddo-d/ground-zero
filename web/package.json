@@ -11,6 +11,7 @@
     "use-deployment": "node scripts/use-deployment.mjs"
   },
   "dependencies": {
+    "@netlify/blobs": "8.2.0",
     "@tanstack/react-query": "5.59.20",
     "lightweight-charts": "4.2.3",
     "next": "15.5.4",
