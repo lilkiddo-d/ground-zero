@@ -1,0 +1,14 @@
+contracts/out
+contracts/cache
+contracts/broadcast/*/31337
+contracts/deployments/31337.json
+node_modules/
+.env
+.env.local
+.env.*.local
+web/.next/
+web/data/
+web/public/uploads/
+indexer/.ponder/
+indexer/generated/
+contracts/broadcast/*/*/dry-run/
