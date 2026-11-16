@@ -11,3 +11,8 @@
   # NEXT_PUBLIC_PRELAUNCH=false plus NEXT_PUBLIC_CHAIN, NEXT_PUBLIC_LAUNCHPAD_ADDRESS, NEXT_PUBLIC_START_BLOCK
   # and NEXT_PUBLIC_LOG_CHUNK in Netlify > Site configuration > Environment variables, then redeploy.
   NEXT_PUBLIC_PRELAUNCH = "true"
+
+# Next.js runtime: turns the build into pages + server functions. Without it Netlify uploads the raw
+# .next folder as static files and every URL returns 404. Pinned in web/package.json devDependencies.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
