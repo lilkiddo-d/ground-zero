@@ -1,6 +1,6 @@
 # GROUND ZERO: a launchpad for Zero
 
-> Brand: **GROUND ZERO** (ground0.fun, @ground0fun). To change it, edit `web/src/config/brand.ts` (name, X handle, vocabulary),
+> Brand: **GROUND ZERO** (ground0.fun, @ground0_fun). To change it, edit `web/src/config/brand.ts` (name, X handle, vocabulary),
 > the colour tokens at the top of `web/src/app/globals.css`, and the mark in `web/src/components/Logo.tsx`.
 
 A pump.fun-style launchpad for LayerZero's Zero chain. It takes the best parts of the competitors (see [RESEARCH.md](RESEARCH.md)):

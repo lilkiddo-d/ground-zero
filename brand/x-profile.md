@@ -10,7 +10,7 @@ Images in this folder:
 | Field | Text | Limit |
 |---|---|---|
 | Name | GROUND ZERO | 50 |
-| Handle | @ground0fun | 15 |
+| Handle | @ground0_fun | 15 |
 | Bio | Every coin starts at ground zero. The fair launchpad on Zero: no presale, no team bags, bots pay to snipe, liquidity locked forever. | 160 (this is 132) |
 | Location | Zero mainnet · Nov 30 | 30 |
 | Website | ground0.fun | |
